@@ -1,3 +1,8 @@
+%Preparamos el entorno
+clear all
+close all
+clc
+
 ##3.Aplicación a eco de 'BuenosDias.wav' y para un td= 1.5s
 Fichero='BuenosDias.wav';
 %La funcion audioread, genera una matriz de datos
@@ -27,3 +32,4 @@ play (player);
 pause(6);
 player = audioplayer (y, Fs);
 play (player);
+audiowrite ('Eco.wav', y, Fs);
