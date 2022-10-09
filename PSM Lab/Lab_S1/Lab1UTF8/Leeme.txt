@@ -1,4 +1,4 @@
 - El fichero Lab1_1 ha pasado a llarmarse sesion1_03
 - El fichero Lab1_2 ha pasado a llarmarse sesion1_04
 - En el PDF, test1_1 hace referencia a Lab1_1 en realidad. Recuerda, ahora se llama sesion1_03.
-- Este curso no tienes por qué rellenar la hoja de respuesta.
+- Este curso no tienes por que rellenar la hoja de respuesta.

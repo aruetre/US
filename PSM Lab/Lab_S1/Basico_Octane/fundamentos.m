@@ -1,6 +1,3 @@
-# Contenidos
-# https://www.tutorialspoint.com/matlab/matlab_syntax.htm
-
 # Limpiar pantalla
 clc;
 
