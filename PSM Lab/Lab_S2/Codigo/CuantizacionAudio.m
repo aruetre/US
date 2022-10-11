@@ -6,7 +6,7 @@ clc
 %Fichero='Pitido.wav';
 Fichero='BuenosDias.wav';
 
-nb=2 ; %Numero de bits
+nb=4 ; %Numero de bits
 
 %La funcion audioread, genera una matriz de datos
 %entre sus valores nos da la señal y su Fs
@@ -26,8 +26,8 @@ player = audioplayer (senal, Fs);
 play (player);
 pause(5)
 %Procesamos el audio
-senalq=cuantizacionbipolar(senal,nb);
-
+%senalq=cuantizacionbipolar(senal,nb);
+senalq=cuantizacionbipolarfast(senal,nb);
 %Representamos la onda cuantizacion
 subplot(212)
 plot(senalq);

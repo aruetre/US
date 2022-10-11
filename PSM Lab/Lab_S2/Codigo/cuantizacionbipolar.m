@@ -10,7 +10,7 @@ function y= cuantizacionbipolar(in,p)
   th=-1+r/2:r:1;
   %Matriz
   mt=[[-1;th'] [th';1]]
-  v=-1:r:1
+  v=-1:r:1;
   %Cuantizacion
   for n=1:length(v)
     pos=find(in>=mt(n,1) & in<=mt(n,2));
