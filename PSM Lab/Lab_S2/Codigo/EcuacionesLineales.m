@@ -7,9 +7,9 @@ clc
 ##1. y[n] = x[n] + c x[n-L]
 x=[1 2 -1];
 x=[x zeros(1,10)];
-c=0.8;%Factor atenuación
+c=0.2;%Factor atenuación
 a=1;%representa las y de la ecuacion de diferencia
-b=[1 0 0 0 c];%represetna las x de la ecuacion de diferencia
+b=[1 0 0 0 0 0 0 c];%represetna las x de la ecuacion de diferencia
 y=filter(b,a,x)
 
 %Representamos la onda

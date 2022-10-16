@@ -8,9 +8,9 @@ Fichero='BuenosDias.wav';
 %La funcion audioread, genera una matriz de datos
 %entre sus valores nos da la señal y su Fs
 [x Fs]= audioread(Fichero);
-td=0.5;
+td=0.8;
 ##Necesitamos la Fs para poder calcular L
-L=Fs*td;;
+L=Fs*td;
 c=0.6;%Factor atenuación
 a=1;%representa las y de la ecuacion de diferencia
 b=zeros(1,L+1);

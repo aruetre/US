@@ -6,7 +6,7 @@ clc
 N=20;
 n=0:N-1; %matriz de elementos
 f=0.9;
-fase=0;  % Debe estar en radianes  grados * pi / 180 o la funcion deg2rad(90)
+fase=deg2rad(90);  % Debe estar en radianes  grados * pi / 180 o la funcion deg2rad(90)
 
 %Generamos la señal
 x=cos(2*pi*f*n+fase);
