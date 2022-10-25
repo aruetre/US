@@ -4,22 +4,25 @@ clear all
 clc
 
 #Numero de muestras
-N=10;
+N=20;
 #F0
 F0=100;
+#F1
+F1=120;
 #Frecuencia Muestreo
 Fs=3*F0;
 #Frecuencia
-f=F0/Fs;
+f0=F0/Fs;
+f1=F1/Fs;
 #Rango
 n=0:N-1;
 #Valor de K
 k=n;
 
-L=50;%ceros añadiso al final de la señal
+L=100;%ceros añadiso al final de la señal
 
 #Señal
-senal=sin(2*pi*n*f+pi/3);
+senal=sin(2*pi*n*f0+pi/3)+sin(2*pi*n*f1);
 
 #Transformada de la señal
 trans=fft(senal);
@@ -29,7 +32,7 @@ figure('name','Resolución Espectral.','NumberTitle','off');
 subplot(311);
 stem(n,senal, "markerfacecolor", [1 0 1]);
 #stem(n*Fs/N,senal, "markerfacecolor", [1 0 1]);
-title ("Señal senal=sin(2*pi*n*f+pi/3)");
+title ("Señal senal=sin(2*pi*n*f0+pi/3)+sin(2*pi*n*f1)");
 
 #Representamos el modulo de la transformada en k
 subplot(312);
