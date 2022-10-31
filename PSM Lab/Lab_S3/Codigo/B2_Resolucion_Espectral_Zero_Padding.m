@@ -16,7 +16,7 @@ n=0:N-1;
 #Valor de K
 k=n;
 
-L=50;%ceros añadiso al final de la señal
+L=100;%ceros añadiso al final de la señal
 
 #Señal
 senal=sin(2*pi*n*f+pi/3);

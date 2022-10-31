@@ -11,7 +11,7 @@ n=0:N-1;
 k=n;
 #Señal X3=u[n]+cos(2*pi*0.2*n)+cos(2*pi*0.25*n)
 senalA1X1=ones(1,N);
-senalA1X3=senalA1X1+cos(2*pi*0.2*n)+cos(2*pi*0.25*n);
+senalA1X3=senalA1X1+cos(2*pi*0.2*n)+cos(2*pi*0.5*n);
 #senalA1X3=senalA1X1+cos(2*pi*0.2*n)+2*cos(2*pi*0.25*n);
 
 #Transformada de la señal x1
