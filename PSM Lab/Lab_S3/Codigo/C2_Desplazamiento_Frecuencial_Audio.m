@@ -5,8 +5,10 @@ clc
 F=440;
 Fs= 8000;
 T=2;
+%El tamaño Fs*T
 N=Fs*T;
 n=0:N-1;
+%Generar el tono
 f=F/Fs;
 x=cos(2*pi*f*n);
 

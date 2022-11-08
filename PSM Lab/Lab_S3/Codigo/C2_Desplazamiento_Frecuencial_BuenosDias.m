@@ -61,7 +61,7 @@ n=0:N-1;
 f=F/Fs;
 
 
-w= e.^(j*2*pi*f*n);
+w= e.^(-j*2*pi*f*n);
 senalBDUP = senalBD.*w;
 
 player = audioplayer (senalBD, FsBD);
